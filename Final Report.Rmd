@@ -1,0 +1,46 @@
+---
+title: "Racial Disparities and Trends in Endometrial Cancer"
+author: "A McVey Moffatt"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+### Introduction
+
+Endometrial cancer (EC) is the abnormal proliferation of cells in the inner epithelial lining of the uterus. EC is the fourth most common cancer in women and most common female genital tract cancer. The objective of this analysis is to identify how race, tumor characteristics, treatment characteristics and social factors impact EC survival.
+
+This analysis uses data from the SEER\*Stat Database: Incidence - SEER Research Plus Data, 17 Registries, Nov 2023 Sub (2000-2021). Non-Hispanic Black and Non-Hispanic White women were included if they were diagnosed between 2000 and 2021 with invasive EC. Patients younger than 18 years, male patients, and patients with a previous history of cancer or any secondary tumor diagnoses were excluded from the analysis.
+
+### Results
+
+#### Table 1:
+
+Patient demographic and clinicopathological characteristics among non-Hispanic white (NHW) and non-Hispanic black (NHB) women diagnosed with endometrial cancer in 2000–2021.
+
+```{r table 1, echo=FALSE}
+readRDS(here::here("Output/table_1.rds"))
+```
+
+#### Table 2:
+
+Age-adjusted hazard ratios (HRs) and 95% confidence intervals (CIs) for Endometrial Cancer (EC)-specific death according to race among women diagnosed with EC in 2000–2021.
+
+```{r cox model, echo=FALSE}
+readRDS(here::here("Output/table_2.rds"))
+```
+
+#### Table 3:
+
+Age-adjusted and multivariable-adjusted hazard ratios (HRs) and 95% confidence intervals (CIs) for Endometrial Cancer (EC)-specific death according to race and tumor characteristics among women diagnosed with EC in 2000-2021.
+
+```{r echo=FALSE}
+readRDS(here::here("Output/table_3.rds"))
+```
+
+#### Figure 1:
+
+Number of women diagnosed with invasive Endometrial Cancer per year in the SEER\*STAT database between 2000-2021.
+
+```{r echo=FALSE}
+readRDS(here::here("Output/figure_1.rds"))
+```

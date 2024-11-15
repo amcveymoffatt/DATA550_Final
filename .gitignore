@@ -1,0 +1,6 @@
+.Rhistory
+*.docx
+*.html
+final project.RMD
+Output/*.rds
+.DS_Store
