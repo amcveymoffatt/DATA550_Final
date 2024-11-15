@@ -1,4 +1,4 @@
-Racial Disparities and Trends in Endometrial Cancer
+Racial Disparities and Trends in Endometrial Cancer from 2000-2021
 ================
 Arnetta McVey Moffatt
 
@@ -14,4 +14,4 @@ invasive EC.
 To render the report after downloading the repository, either the
 Makefile should be used to generate the figures and final report or each
 individual section of code should be run in numerical order (1 through
-5.
+5).
