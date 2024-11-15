@@ -28,6 +28,5 @@ table_1 <- cases_EC %>% select(age_at_dx, ECDEATH, age_at_dx_55, Stage, Grade, H
   gtsummary::add_overall()
 
 
-
 # save table 1 to be included in the report
 saveRDS(table_1, here::here("Output/table_1.rds"))

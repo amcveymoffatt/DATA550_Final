@@ -13,6 +13,5 @@ table_3 <- tbl_regression(table_3, exponentiate = TRUE, include = c("Stage", "Gr
                                       Histology_subtype ~ "Histologic Subtype")
 ) %>% modify_table_styling(column = c(p.value),hide = TRUE)
 
-
 # save table 3 to be included in the report
 saveRDS(table_3, here::here("Output/table_3.rds"))

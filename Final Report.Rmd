@@ -44,3 +44,10 @@ Number of women diagnosed with invasive Endometrial Cancer per year in the SEER\
 ```{r echo=FALSE}
 readRDS(here::here("Output/figure_1.rds"))
 ```
+
+### Conclusions
+
+Rates of endometrial cancer in the United States has increased substantially since 2000 (Figure 1). While there was a noticeable decrease of cases in 2020, it can be assumed that the COVID-19 pandemic prevent may from accessing healthcare.
+
+Similar to trends in other cancers, Non-Hispanic black women are more likely to die from endometrial cancer than Non-Hispanic white women (Table 2). Non-Hispanic black women are also diagnosed at more advanced stages and with higher grades (Table 1). Rare histologic subtypes, such as Mixed Cell Adenocarcinoma or Clear Cell are more common among Non-Hispanic black women (Table 1). The rare histologic subtypes have worse outcomes than the common endometriod subtypes (Table 3).
+

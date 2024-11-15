@@ -3,7 +3,6 @@ library(tidyverse)
 here::i_am("Code/04_figure_1.R")
 cases_EC <- readRDS(here::here("Data/cleaned_EC_data.RDS"))
 
-
 cases_by_year <- cases_EC %>%
   group_by(Year.of.diagnosis) %>%
   summarise(count = n())

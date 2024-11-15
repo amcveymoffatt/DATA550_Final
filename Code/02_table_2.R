@@ -13,8 +13,6 @@ table_2 <- tbl_regression(table_2, exponentiate = TRUE, include = c("Race")) %>%
   modify_table_styling(column = c(p.value),hide = TRUE)
 
 
-
-
 # save table 2 to be included in the report
 saveRDS(table_2, here::here("Output/table_2.rds"))
 
