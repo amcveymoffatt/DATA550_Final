@@ -14,4 +14,9 @@ invasive EC.
 To render the report after downloading the repository, either the
 Makefile should be used to generate the figures and final report or each
 individual section of code should be run in numerical order (1 through
-5).
+5).  
+  
+The report includes Tables 1-3 and Figure 1 which identify population
+and biological characteristic of the study population, analysis of
+endometrial cancer death by selected characteristic and trends in
+endometrial cancer between 2000 and 2021.
