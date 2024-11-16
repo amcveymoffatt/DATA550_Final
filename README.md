@@ -23,12 +23,28 @@ individual section of code should be run in numerical order (1 through
 
 #### Repository Organization
 
-- Code directory: Contains all R script files required for the analysis
-  in the final report
-- Data directory: Stores the data set used in the report
-- Output directory: Holds all intermediate data generated during the
+- `Code directory`: Contains all R script files required for the
+  analysis in the final report
+- `Data directory`: Stores the data set used in the report
+- `Output directory`: Holds all intermediate data generated during the
   analysis
-- Makefile: Automates the analysis workflow and output generation
+- `Makefile`: Automates the analysis workflow and output generation
   - When Make is installed, running the command Make in the terminal
     will generate the final report and running the command Make clean
     will reset the repository after generating the report
+
+### Requirements
+
+- `Packages`: Includes here, tidyverse, survival, and gtsummary.
+  - Missing packages are identified and installed in `01_table_1.R`
+- `R`
+- `Make`
+- `Git` (optional)
+
+### How to Generate Report
+
+1.  Clone the repository via Git or download via zip file
+2.  Generate the final report
+    1.  In the terminal run `Make report.html`
+3.  Remove all files generated when running `Make report.html`
+    1.  In the terminal run `Make clean`
