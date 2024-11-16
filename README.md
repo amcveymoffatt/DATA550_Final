@@ -29,6 +29,6 @@ individual section of code should be run in numerical order (1 through
 - Output directory: Holds all intermediate data generated during the
   analysis
 - Makefile: Automates the analysis workflow and output generation
-  - When Make is install, running the command Make in the terminal will
-    generate the final report and running the command Make clean will
-    reset the repository after generating the report
+  - When Make is installed, running the command Make in the terminal
+    will generate the final report and running the command Make clean
+    will reset the repository after generating the report
