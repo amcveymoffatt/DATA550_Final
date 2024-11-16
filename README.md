@@ -20,3 +20,15 @@ To render the report after downloading the repository, either the
 Makefile should be used to generate the figures and final report or each
 individual section of code should be run in numerical order (1 through
 5).
+
+#### Repository Organization
+
+- Code directory: Contains all R script files required for the analysis
+  in the final report
+- Data directory: Stores the data set used in the report
+- Output directory: Holds all intermediate data generated during the
+  analysis
+- Makefile: Automates the analysis workflow and output generation
+  - When Make is install, running the command Make in the terminal will
+    generate the final report and running the command Make clean will
+    reset the repository after generating the report
