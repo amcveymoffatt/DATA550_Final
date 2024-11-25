@@ -1,5 +1,5 @@
 # Code/05_render_report.R: generate the final report
-Final Report.html: Code/05_render_report.R Output/table_1.rds \
+Final-Report.html: Code/05_render_report.R Output/table_1.rds \
 Output/table_2.rds Output/table_3.rds Output/figure_1.rds
 	Rscript Code/05_render_report.R
 
