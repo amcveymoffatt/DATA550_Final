@@ -1,6 +1,4 @@
-packages_list <- c("tidyverse", "here", "pacman", "knitr", "survival", "gtsummary")
-new_packages <- packages_list[!(packages_list %in% installed.packages()[,"Package"])]
-if(length(new_packages)) install.packages(new_packages)
+# Load packages
 pacman::p_load(tidyverse, survival, gtsummary)
 
 # Load data

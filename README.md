@@ -43,7 +43,10 @@ individual section of code should be run in numerical order (1 through
 ### How to Generate Report
 
 1.  Clone the repository via Git or download via zip file
-2.  Generate the final report
-    1.  In the terminal run ``` Make``Final-Report``.html ```
-3.  Remove all files generated when running `Make Final-Report.html`
+2.  Set working directory to the project directory
+3.  Synchronize project environment
+    1.  In the terminal run `Make install`
+4.  Generate the final report
+    1.  In the terminal run `Make` or `Make Final-Report.html`
+5.  Remove all files generated when running `Make Final-Report.html`
     1.  In the terminal run `Make clean`
