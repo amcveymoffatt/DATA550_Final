@@ -25,7 +25,7 @@ To render the report after downloading the repository, either the Makefile shoul
 ### Requirements
 
 -   `Packages`: Includes renv, here, tidyverse, survival, and gtsummary.
-    -   Missing packages are identified and the project environment is synchronized using the renv package.
+    -   Missing packages are identified and the project environment is synchronized using the renv package in `00_renv.R`.
 -   `R`
 -   `Make`
 -   `Git` (optional)

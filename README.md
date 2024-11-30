@@ -27,6 +27,10 @@ individual section of code should be run in numerical order (1 through
 - `Data directory`: Stores the data set used in the report
 - `Output directory`: Holds all intermediate data generated during the
   analysis
+- `renv directory`: Necessary to synchronize the R package environment
+  using renv
+  - `renv.lock file`: Contains the detailed record of all the R packages
+    and their specific versions used for the project.
 - `Makefile`: Automates the analysis workflow and output generation
   - When Make is installed, running the command Make in the terminal
     will generate the final report and running the command Make clean
@@ -34,8 +38,9 @@ individual section of code should be run in numerical order (1 through
 
 ### Requirements
 
-- `Packages`: Includes here, tidyverse, survival, and gtsummary.
-  - Missing packages are identified and installed in `01_table_1.R`
+- `Packages`: Includes renv, here, tidyverse, survival, and gtsummary.
+  - Missing packages are identified and the project environment is
+    synchronized using the renv package in `00_renv.R`.
 - `R`
 - `Make`
 - `Git` (optional)
