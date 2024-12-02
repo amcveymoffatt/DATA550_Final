@@ -53,5 +53,7 @@ individual section of code should be run in numerical order (1 through
     1.  In the terminal run `Make install`
 4.  Generate the final report
     1.  In the terminal run `Make` or `Make Final-Report.html`
+        1.  `Make install` will automatically run when the final report
+            is generated
 5.  Remove all files generated when running `Make Final-Report.html`
     1.  In the terminal run `Make clean`
