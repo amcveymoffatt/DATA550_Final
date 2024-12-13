@@ -28,18 +28,10 @@ WORKDIR /home/rstudio/project
 RUN mkdir /home/rstudio/project/Report
 RUN mkdir /home/rstudio/project/renv
 
-
 COPY .Rprofile .Rprofile
 COPY renv.lock renv.lock
 COPY renv/activate.R renv/activate.R
 COPY renv/settings.json renv/settings.json
-COPY Makefile Makefile
-COPY Code Code
-COPY Data Data
-COPY README.Rmd README.Rmd
-COPY README.md README.md
-COPY Output Output
-COPY .gitignore .gitignore 
 ARG FILE_NAME="Final Report.Rmd"
 COPY ${FILE_NAME} ${FILE_NAME}
 ENV RENV_PATHS_CACHE=renv/.cache
@@ -49,6 +41,14 @@ RUN R -e "renv::restore(prompt=FALSE)"
 
 FROM amcveymoffatt/data550_final:step2 AS step3
 RUN R -e "install.packages('broom.helpers')"
+COPY Makefile Makefile
+COPY Code Code
+COPY Data Data
+COPY README.Rmd README.Rmd
+COPY README.md README.md
+COPY Output Output
 
 FROM amcveymoffatt/data550_final:step3 AS step4
-CMD make
+CMD ["make"]
+
+
