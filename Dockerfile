@@ -48,7 +48,6 @@ COPY README.Rmd README.Rmd
 COPY README.md README.md
 COPY Output Output
 
-FROM amcveymoffatt/data550_final:step3 AS step4
 CMD ["make"]
 
 

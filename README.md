@@ -47,6 +47,7 @@ individual section of code should be run in numerical order (1 through
 - `R`
 - `Make`
 - `Git` (optional)
+- `Docker` (optional)
 
 ### How to Generate Report
 
