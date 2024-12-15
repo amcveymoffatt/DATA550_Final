@@ -11,7 +11,7 @@ RENVFILES = renv.lock renv/activate.R renv/settings.json
 
 # Build Docker Image: Run on local machine
 data550_final: Dockerfile $(PROJECTFILES) $(RENVFILES)
-	docker build -t amcveymoffatt/data550_final
+	docker build -t data550_final
 	touch $@
 
 # Generate Report Using Dockerfile: Run on local machine
